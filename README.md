@@ -1,4 +1,26 @@
-# embedR
+# embedR (Windows Compatible Fork) 🛠️
+
+> **Note to Windows Users :**
+> This is a fork of the original package containing a fix for compilation errors on Windows (BLAS/LAPACK linking issues).
+>
+> **What changed?** This fork adds the file `src/Makevars.win` to fix common installation errors (`undefined reference`) on Windows systems.
+---
+
+## Installation (Windows Fix)
+
+To install this fixed version directly, use:
+
+```r
+# Install devtools if needed
+if(!require(devtools)) install.packages("devtools")
+
+# Install from this fork
+devtools::install_github("FredPedrosa/embedR")
+```
+
+_(Original readme bellow)_
+
+# embedR 
 
 The `embedR` package is an open-source R package to generate and analyze state-of-the-art text embeddings. Providing access to free and paid APIs from [Hugging Face](https://huggingface.co/inference-api), [OpenAI](https://openai.com/blog/openai-api), and [Cohere](https://cohere.com/), the package offers functions to generate, group, project, label, and visualize text embeddings.  
 
